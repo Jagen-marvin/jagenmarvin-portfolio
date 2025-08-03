@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  username: "Marvin Jagen",
+  title: "Hi all, I'm Marvin 👋",
+  subTitle:
+    "Backend Software Engineer | Researcher | Cloud & Data Platforms Enthusiast | Contributor to AI4Health Projects in Uganda.",
+  resumeLink: "./Marvin_Jagen_Computer_Science_CV.pdf", // Make sure this file is in the public/ folder
+  displayGreeting: true // Set this to false if you want to hide this section
 };
+
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Jagen-marvin",
+  linkedin: "https://www.linkedin.com/in/marvin-jagen-101285256",
+  gmail: "jagenmarvin1@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -123,83 +122,99 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Makerere University",
+      logo: require("./assets/images/makerereLogo.png"), // You'll need to place the logo file here or change/remove
+      subHeader: "Bachelor of Science in Electrical Engineering",
+      duration: "2018 - 2022",
+      desc: "Graduated with a Second Class Upper Honors degree.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Final year project: An Internet of Things-based Smart Water Meter with Machine Learning-aided Water Quality Assessment."
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
+
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Backend Development",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Backend",
+      Stack: "ETL Pipelines & Data Handling",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "DevOps & Cloud Computing",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend & UI Engineering",
+      progressPercentage: "65%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
+
+
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Backend Software Engineer",
+      company: "MakAI",
+      companylogo: require("./assets/images/makai.jpeg"), // add appropriate logo
+      date: "2023 – Present",
+      desc: "Led backend infrastructure development for health-focused AI systems and research platforms.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and deployed cloud-based backend services for ML-driven cervical cancer screening",
+        "Developed infrastructure for localized AI data platforms under the Google Amplify Initiative",
+        "Integrated IVR systems with NLP pipelines to support mental health services"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Backend Software Engineer",
+      company: "Marconilab@Mak",
+      companylogo: require("./assets/images/marconi.png"), // add appropriate logo
+      date: "2022 – 2024",
+      desc: "Built a robust data pipeline to support AI-ready medical imaging datasets.",
+      descBullets: [
+        "Designed and deployed ETL pipelines for Chest X-ray annotation",
+        "Led development of the Lacuna TB dataset for AI-based tuberculosis screening"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Frontend Software Engineer",
+      company: "EmergentAI",
+      companylogo: require("./assets/images/emergentai.png"), // add appropriate logo
+      date: "2022 – 2023",
+      desc: "Designed and launched the official EmergentAI website using Django"
+    },
+    {
+      role: "Research Intern",
+      company: "Netlabs!UG",
+      companylogo: require("./assets/images/netlabs.png"), // add appropriate logo
+      date: "2021 – 2022",
+      desc: "Supported digital inclusion research projects and field-based data collection.",
+      descBullets: [
+        "Collected biometric and environmental data for COVID-19 ML model",
+        "Built data tools for community radio and trained students in Scratch programming",
+        "Contributed to IoT-based borehole monitoring prototype for rural Uganda"
+      ]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -370,10 +385,9 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Discuss a project or just want to say hi? My inbox is open to all.",
+  number: "+256 779804606",
+  email_address: "jagenmarvin1@gmail.com"
 };
 
 // Twitter Section
